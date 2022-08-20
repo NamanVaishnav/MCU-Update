@@ -16,6 +16,11 @@
 		91BD631128B0B20B009A4190 /* MCUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD631028B0B20B009A4190 /* MCUTests.swift */; };
 		91BD631B28B0B20B009A4190 /* MCUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD631A28B0B20B009A4190 /* MCUUITests.swift */; };
 		91BD631D28B0B20B009A4190 /* MCUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD631C28B0B20B009A4190 /* MCUUITestsLaunchTests.swift */; };
+		91BD633128B0CED1009A4190 /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633028B0CED1009A4190 /* NetworkClass.swift */; };
+		91BD633328B0D5A4009A4190 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633228B0D5A4009A4190 /* TargetType.swift */; };
+		91BD633528B0D5D4009A4190 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633428B0D5D4009A4190 /* HTTPMethod.swift */; };
+		91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633628B0D6FD009A4190 /* MCUConstants.swift */; };
+		91BD633A28B0E17B009A4190 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		91BD631628B0B20B009A4190 /* MCUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BD631A28B0B20B009A4190 /* MCUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUUITests.swift; sourceTree = "<group>"; };
 		91BD631C28B0B20B009A4190 /* MCUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91BD633028B0CED1009A4190 /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
+		91BD633228B0D5A4009A4190 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		91BD633428B0D5D4009A4190 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		91BD633628B0D6FD009A4190 /* MCUConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUConstants.swift; sourceTree = "<group>"; };
+		91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +173,9 @@
 		91BD632E28B0C008009A4190 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				91BD633828B0E167009A4190 /* Helpers */,
 				91BD632F28B0C050009A4190 /* Network */,
+				91BD633628B0D6FD009A4190 /* MCUConstants.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -171,8 +183,19 @@
 		91BD632F28B0C050009A4190 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				91BD633028B0CED1009A4190 /* NetworkClass.swift */,
+				91BD633228B0D5A4009A4190 /* TargetType.swift */,
+				91BD633428B0D5D4009A4190 /* HTTPMethod.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		91BD633828B0E167009A4190 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BD633328B0D5A4009A4190 /* TargetType.swift in Sources */,
+				91BD633A28B0E17B009A4190 /* Dictionary+Ext.swift in Sources */,
+				91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */,
 				91BD62FE28B0B20A009A4190 /* ViewController.swift in Sources */,
+				91BD633528B0D5D4009A4190 /* HTTPMethod.swift in Sources */,
+				91BD633128B0CED1009A4190 /* NetworkClass.swift in Sources */,
 				91BD62FA28B0B20A009A4190 /* AppDelegate.swift in Sources */,
 				91BD62FC28B0B20A009A4190 /* SceneDelegate.swift in Sources */,
 			);
