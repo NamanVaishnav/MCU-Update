@@ -99,13 +99,10 @@
 		91BD62F828B0B20A009A4190 /* MCU */ = {
 			isa = PBXGroup;
 			children = (
-				91BD62F928B0B20A009A4190 /* AppDelegate.swift */,
-				91BD62FB28B0B20A009A4190 /* SceneDelegate.swift */,
-				91BD62FD28B0B20A009A4190 /* ViewController.swift */,
-				91BD62FF28B0B20A009A4190 /* Main.storyboard */,
-				91BD630228B0B20B009A4190 /* Assets.xcassets */,
-				91BD630428B0B20B009A4190 /* LaunchScreen.storyboard */,
-				91BD630728B0B20B009A4190 /* Info.plist */,
+				91BD632C28B0BF09009A4190 /* Features */,
+				91BD632B28B0BE95009A4190 /* Storyboards */,
+				91BD632E28B0C008009A4190 /* Utility */,
+				91BD632928B0BE32009A4190 /* Misc */,
 			);
 			path = MCU;
 			sourceTree = "<group>";
@@ -125,6 +122,57 @@
 				91BD631C28B0B20B009A4190 /* MCUUITestsLaunchTests.swift */,
 			);
 			path = MCUUITests;
+			sourceTree = "<group>";
+		};
+		91BD632928B0BE32009A4190 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				91BD630728B0B20B009A4190 /* Info.plist */,
+				91BD62F928B0B20A009A4190 /* AppDelegate.swift */,
+				91BD62FB28B0B20A009A4190 /* SceneDelegate.swift */,
+				91BD630228B0B20B009A4190 /* Assets.xcassets */,
+				91BD630428B0B20B009A4190 /* LaunchScreen.storyboard */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		91BD632B28B0BE95009A4190 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				91BD62FF28B0B20A009A4190 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		91BD632C28B0BF09009A4190 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				91BD632D28B0BF41009A4190 /* Characters */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		91BD632D28B0BF41009A4190 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				91BD62FD28B0B20A009A4190 /* ViewController.swift */,
+			);
+			name = Characters;
+			sourceTree = "<group>";
+		};
+		91BD632E28B0C008009A4190 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				91BD632F28B0C050009A4190 /* Network */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		91BD632F28B0C050009A4190 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
