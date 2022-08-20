@@ -21,6 +21,11 @@
 		91BD633528B0D5D4009A4190 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633428B0D5D4009A4190 /* HTTPMethod.swift */; };
 		91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633628B0D6FD009A4190 /* MCUConstants.swift */; };
 		91BD633A28B0E17B009A4190 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */; };
+		91BD633C28B11449009A4190 /* ModelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633B28B11449009A4190 /* ModelCharacter.swift */; };
+		91BD633F28B11499009A4190 /* ModelComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD633E28B11499009A4190 /* ModelComic.swift */; };
+		91BD634228B116E9009A4190 /* ViewModelMCU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634128B116E9009A4190 /* ViewModelMCU.swift */; };
+		91BD634528B11963009A4190 /* CharacterWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634428B11963009A4190 /* CharacterWS.swift */; };
+		91BD634728B1233F009A4190 /* ComicWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634628B1233F009A4190 /* ComicWS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		91BD633428B0D5D4009A4190 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		91BD633628B0D6FD009A4190 /* MCUConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUConstants.swift; sourceTree = "<group>"; };
 		91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
+		91BD633B28B11449009A4190 /* ModelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCharacter.swift; sourceTree = "<group>"; };
+		91BD633E28B11499009A4190 /* ModelComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelComic.swift; sourceTree = "<group>"; };
+		91BD634128B116E9009A4190 /* ViewModelMCU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelMCU.swift; sourceTree = "<group>"; };
+		91BD634428B11963009A4190 /* CharacterWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterWS.swift; sourceTree = "<group>"; };
+		91BD634628B1233F009A4190 /* ComicWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicWS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +175,10 @@
 		91BD632D28B0BF41009A4190 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				91BD634328B11935009A4190 /* MCUWS */,
+				91BD634028B1151C009A4190 /* ViewModels */,
 				91BD62FD28B0B20A009A4190 /* ViewController.swift */,
+				91BD633D28B1146B009A4190 /* Models */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -196,6 +209,32 @@
 				91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		91BD633D28B1146B009A4190 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91BD633B28B11449009A4190 /* ModelCharacter.swift */,
+				91BD633E28B11499009A4190 /* ModelComic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91BD634028B1151C009A4190 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91BD634128B116E9009A4190 /* ViewModelMCU.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91BD634328B11935009A4190 /* MCUWS */ = {
+			isa = PBXGroup;
+			children = (
+				91BD634428B11963009A4190 /* CharacterWS.swift */,
+				91BD634628B1233F009A4190 /* ComicWS.swift */,
+			);
+			path = MCUWS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,10 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BD633C28B11449009A4190 /* ModelCharacter.swift in Sources */,
 				91BD633328B0D5A4009A4190 /* TargetType.swift in Sources */,
 				91BD633A28B0E17B009A4190 /* Dictionary+Ext.swift in Sources */,
+				91BD634728B1233F009A4190 /* ComicWS.swift in Sources */,
 				91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */,
+				91BD634228B116E9009A4190 /* ViewModelMCU.swift in Sources */,
 				91BD62FE28B0B20A009A4190 /* ViewController.swift in Sources */,
+				91BD633F28B11499009A4190 /* ModelComic.swift in Sources */,
+				91BD634528B11963009A4190 /* CharacterWS.swift in Sources */,
 				91BD633528B0D5D4009A4190 /* HTTPMethod.swift in Sources */,
 				91BD633128B0CED1009A4190 /* NetworkClass.swift in Sources */,
 				91BD62FA28B0B20A009A4190 /* AppDelegate.swift in Sources */,

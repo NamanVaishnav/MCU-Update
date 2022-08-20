@@ -11,7 +11,7 @@ import CryptoKit
 
 enum Marvel {
     case characters(_ limit: Int,_ offset: Int,_ search: String)
-    case comics(_ limit: Int,_ offset: Int,_ search: String,_ dateFilter: String)
+    case comics(_ limit: Int,_ offset: Int,_ characterId: String)
 }
 
 extension Marvel: TargetType {
@@ -51,14 +51,14 @@ extension Marvel: TargetType {
             req.httpMethod = method.rawValue
             return req
             
-        case .comics(let limit, let offset, let searchQuery, let dateFilter):
+        case .comics(let limit, let offset, let characterId):
             let queryParams = ["format": "comic",
                                "formatType": "comic",
                                "orderBy": "-onsaleDate",
-                               "dateDescriptor": dateFilter, //"lastWeek",
+                               "characters": characterId,
                                "limit": "\(limit)",
                                "offset": "\(offset)"
-            ] + authParams + (searchQuery.count > 0 ? ["titleStartsWith" : searchQuery] : [:])
+            ] + authParams
             
             let query = queryParams.map { $0.0 + "=" + $0.1 }.joined(separator: "&")
             var req = URLRequest(url: URL(string: "\(baseURL)/\(path)?\(query)")!)
