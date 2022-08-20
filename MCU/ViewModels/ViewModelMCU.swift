@@ -78,7 +78,7 @@ class ViewModelMCU {
     /// - Parameters:
     ///   - characterId: Id of character
     ///   - completion: handler for models of comics
-    func getComicsForCharacterId(forCharacterId characterId: String, completion: @escaping (_ arrComics: [ComicResult]) -> Void){
+    private func getComicsForCharacterId(forCharacterId characterId: String, completion: @escaping (_ arrComics: [ComicResult]) -> Void){
         let comicWSObj = ComicWS(characterId: characterId)
         comicWSObj.fetchComics { result in
             switch result {
