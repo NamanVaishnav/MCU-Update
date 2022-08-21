@@ -23,12 +23,30 @@ class CharacterListVC: UICollectionViewController {
     private var searchTask: DispatchWorkItem?
     /// enum refrence which is act as an argument in methods to manipulate UI of screen
     private var cellType: MCUCellType = .skeletonCell
-
+    /// refresh control
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerCell()
         self.collectionView.collectionViewLayout = createLayout()
         showSearchController()
+        setupRefreshControl()
+        callAPI()
+    }
+    
+    /// refresh control setup
+    private func setupRefreshControl(){
+        self.extendedLayoutIncludesOpaqueBars = true
+        refreshControl.tintColor = .white
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        collectionView.addSubview(refreshControl)
+        collectionView.alwaysBounceVertical = true
+    }
+    
+    /// refresh refresh data
+    @objc func refreshData() {
+        // API Call
         callAPI()
     }
     
@@ -40,7 +58,7 @@ class CharacterListVC: UICollectionViewController {
         self.collectionView!.register(UINib.init(nibName: "EmptyCell", bundle: nil), forCellWithReuseIdentifier: "EmptyCell")
         self.collectionView!.register(UINib.init(nibName: "SearchHistoryCell", bundle: nil), forCellWithReuseIdentifier: "SearchHistoryCell")
     }
-
+    
     //MARK: - search controller configuration
     func showSearchController() {
         searchController.searchResultsUpdater = self
@@ -54,7 +72,7 @@ class CharacterListVC: UICollectionViewController {
         definesPresentationContext = true
         navigationController?.navigationBar.sizeToFit()
     }
-   
+    
     //MARK: - callAPI
     /// execute network call to fetch list of characters
     /// - Parameter searchQuery: string which is resposible to query data according to user search
@@ -66,18 +84,22 @@ class CharacterListVC: UICollectionViewController {
             } else {
                 self.cellType = .emptyCell
             }
-            self.updateLayput(forCellType: self.cellType)
+            DispatchQueue.main.async {
+                // Disable refresh control if already refreshing
+                if self.refreshControl.isRefreshing {
+                    self.refreshControl.endRefreshing()
+                }
+                self.updateLayput(forCellType: self.cellType)
+            }
         }
     }
     
     /// update collectionView cell layout as per user actions
     /// - Parameter cellType: type of cell which need to be diplay on collectionView
     func updateLayput(forCellType cellType: MCUCellType) {
-        DispatchQueue.main.async {
-            self.cellType = cellType
-            self.collectionView.collectionViewLayout = self.createLayout()
-            self.collectionView.reloadData()
-        }
+        self.cellType = cellType
+        self.collectionView.collectionViewLayout = self.createLayout()
+        self.collectionView.reloadData()
     }
     
     //MARK: - create collection Layout
@@ -112,7 +134,7 @@ class CharacterListVC: UICollectionViewController {
             let section = NSCollectionLayoutSection(group: group)
             // return
             return UICollectionViewCompositionalLayout(section: section)
-        
+            
         }
     }
     
@@ -148,7 +170,7 @@ class CharacterListVC: UICollectionViewController {
             let obj = arrSearchHistory[indexPath.row]
             aCell.lblSearch.text = obj
             return aCell
-        
+            
         case .normalCell,.searchingCell:
             guard let aCell: CharacterCell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCell", for: indexPath) as? CharacterCell else {return UICollectionViewCell()}
             let obj = arrCharacters[indexPath.row]
@@ -162,16 +184,31 @@ class CharacterListVC: UICollectionViewController {
             } else {
                 aCell.btnName.isHidden = true
             }
+            aCell.btnBookmark.isSelected = obj.isBookmarked
+            
+            // Bookmark completion
+            aCell.bookmarkCompletion = { () -> Void in
+                if aCell.btnBookmark.isSelected {
+                    // remove item from bookmark
+                    self.viewModelCharacter.removeBookMark(forCharacter: obj)
+                } else {
+                    // cache bookmark
+                    self.viewModelCharacter.addBookMark(forCharacter: obj)
+                }
+                aCell.btnBookmark.isSelected = !aCell.btnBookmark.isSelected
+                obj.isBookmarked = !obj.isBookmarked
+            }
+            
             return aCell
         }
     }
-
+    
     // MARK: - UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         switch cellType {
         case .skeletonCell,
-             .emptyCell,
-             .searchHistoryCell:
+                .emptyCell,
+                .searchHistoryCell:
             break
         case .normalCell,.searchingCell:
             if indexPath.item == self.arrCharacters.count - 4 && self.arrCharacters.count  < viewModelCharacter.totalListOnServerCount {
@@ -184,13 +221,13 @@ class CharacterListVC: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch cellType {
         case .skeletonCell,
-             .emptyCell:
+                .emptyCell:
             break
         case .searchHistoryCell:
-
+            
             viewModelCharacter.offset = 0
             viewModelCharacter.isFetching = false
-
+            
             let obj = arrSearchHistory[indexPath.row]
             searchController.searchBar.text = obj
             callAPI(withSearch: searchController.searchBar.text ?? "")
@@ -201,7 +238,7 @@ class CharacterListVC: UICollectionViewController {
             self.navigationController?.show(objVC, sender: nil)
         }
     }
-
+    
 }
 
 extension CharacterListVC: UISearchBarDelegate, UISearchResultsUpdating {
@@ -234,7 +271,7 @@ extension CharacterListVC: UISearchBarDelegate, UISearchResultsUpdating {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         viewModelCharacter.offset = 0
         viewModelCharacter.isFetching = false
-
+        
         callAPI(withSearch: "")
     }
     

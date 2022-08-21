@@ -60,12 +60,21 @@ class ViewModelMCU {
                     }
 
                     myGroup.notify(queue: .main) {
-                        completion(self.arrCharacters)
-                        // MARK: - CACHE RESPONSE
-                        let cacheManager = CacheManager(cacheType: .character, characters: self.arrCharacters)
-                        cacheManager.cacheData()
-                    }
+                        //MARK: - check with bookmarked items
+                        MCUFetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
+                            self.arrCharacters.forEach { item in
+                                if arrCharacter.contains(item) {
+                                    item.isBookmarked = true
+                                }
+                            }
                     
+                            // perform comopletion
+                            completion(self.arrCharacters)
+                            // MARK: - CACHE RESPONSE
+                            let cacheManager = CacheManager(cacheType: .character, characters: self.arrCharacters)
+                            cacheManager.cacheData()
+                        }
+                    }
                 } else {
                     // MARK: - GET CACHED RESPONSE
                     MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
@@ -76,7 +85,16 @@ class ViewModelMCU {
                 print(err.localizedDescription)
                 // MARK: - GET CACHED RESPONSE
                 MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
-                    completion(arrCharacter)
+                    self.arrCharacters = arrCharacter
+                    //MARK: - check with bookmarked items
+                    MCUFetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter1 in
+                        self.arrCharacters.forEach { item in
+                            if arrCharacter1.contains(item) {
+                                item.isBookmarked = true
+                            }
+                        }
+                    }
+                    completion(self.arrCharacters)
                 }
             }
         }
@@ -101,5 +119,31 @@ class ViewModelMCU {
                 print(error.localizedDescription)
             }
         }
+    }
+}
+
+//MARK: - BOOKMARK
+extension ViewModelMCU {
+    /// remove item from bookmark
+    func removeBookMark(forCharacter character: CharacterResult) {
+        MCUFetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
+            var allBookmarks = arrCharacter
+            print(allBookmarks.count)
+            allBookmarks.removeAll { item in
+                item == character
+            }
+            print(allBookmarks.count)
+            
+            // cache all bookmarks
+            let cacheManager = CacheManager(cacheType: .bookmarks, bookMarks: allBookmarks)
+            cacheManager.cacheData()
+        }
+    }
+    
+    /// Add item in bookmark
+    func addBookMark(forCharacter character: CharacterResult) {
+        // cache bookmark
+        let cacheManager = CacheManager(cacheType: .bookmark, bookMark: character)
+        cacheManager.cacheData()
     }
 }

@@ -21,7 +21,7 @@ class MCUFetchManager {
             self.fetchCharacters { arrCharacters in
                 completion(arrCharacters)
             }
-        case .bookmark:
+        case .bookmark, .bookmarks:
             self.fetchBookmarkedCharacters { arrCharacters in
                 completion(arrCharacters)
             }
@@ -43,7 +43,7 @@ extension MCUFetchManager {
     /// fetch bookmarked characters
     /// - Parameter completion: handler returns bookmarked characters
     private func fetchBookmarkedCharacters(completion: @escaping (_ arrCharacters: [CharacterResult])-> Void) {
-        let storageService = StorageService(dataType: .character)
+        let storageService = StorageService(dataType: .bookmark)
         storageService.fetchData { arrCharacters in
             completion(arrCharacters)
         }

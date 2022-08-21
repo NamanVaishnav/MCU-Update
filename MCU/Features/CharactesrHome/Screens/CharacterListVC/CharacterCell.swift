@@ -11,6 +11,8 @@ import UIKit
 class CharacterCell: UICollectionViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var btnName: UIButton!
+    @IBOutlet weak var btnBookmark: UIButton!
+    var bookmarkCompletion: (()->())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,5 +35,12 @@ class CharacterCell: UICollectionViewCell {
         btnName.titleLabel?.numberOfLines = 0
         btnName.setBackgroundImage(UIImage(named: "ic_title_background"), for: .normal)
         btnName.titleEdgeInsets = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
+    }
+    
+    
+    @IBAction func actionBookmark(_ sender: UIButton) {
+        if let bookmarkCompletion = bookmarkCompletion {
+            bookmarkCompletion()
+        }
     }
 }

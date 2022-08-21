@@ -96,6 +96,7 @@ extension CharacterDetailVC: UICollectionViewDelegate, UICollectionViewDataSourc
             } else {
                 aCell.btnName.isHidden = true
             }
+            aCell.btnBookmark.isHidden = true
             return aCell
         } else {
             return UICollectionViewCell()

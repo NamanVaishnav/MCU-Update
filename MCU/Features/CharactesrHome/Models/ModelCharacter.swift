@@ -19,17 +19,22 @@ struct DataClass: Codable {
 }
 
 // MARK: - Result
-class CharacterResult: Codable {
+class CharacterResult: Codable, Equatable {
     let id: Int?
     let name: String?
     let thumbnail: Thumbnail?
     let resourceURI: String?
     let description: String?
+    var isBookmarked: Bool = false
     var comics: [ComicResult]?
  
     enum CodingKeys: String, CodingKey {
         case id, name
         case thumbnail, resourceURI, description
+    }
+    
+    static func == (lhs: CharacterResult, rhs: CharacterResult) -> Bool {
+        return lhs.id == rhs.id
     }
 }
 

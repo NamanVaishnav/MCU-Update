@@ -32,6 +32,9 @@ class StorageService {
             } else {
                 UDSettings.bookmarks = [data]
             }
+        case .bookmarks:
+            guard let data = input as? [CharacterResult] else { return }
+            UDSettings.bookmarks = data
         }
     }
     
@@ -45,7 +48,7 @@ class StorageService {
             } else {
                 completion([])
             }
-        case .bookmark:
+        case .bookmark, .bookmarks:
             if let bookmarks = UDSettings.bookmarks {
                 completion(bookmarks)
             } else {
