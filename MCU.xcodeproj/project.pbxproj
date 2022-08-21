@@ -39,8 +39,8 @@
 		91BD634228B116E9009A4190 /* ViewModelMCU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634128B116E9009A4190 /* ViewModelMCU.swift */; };
 		91BD634528B11963009A4190 /* CharacterWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634428B11963009A4190 /* CharacterWS.swift */; };
 		91BD634728B1233F009A4190 /* ComicWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634628B1233F009A4190 /* ComicWS.swift */; };
-		91BD634A28B15425009A4190 /* MCUCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634928B15425009A4190 /* MCUCacheManager.swift */; };
-		91BD634C28B158A6009A4190 /* MCUFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634B28B158A6009A4190 /* MCUFetchManager.swift */; };
+		91BD634A28B15425009A4190 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634928B15425009A4190 /* CacheManager.swift */; };
+		91BD634C28B158A6009A4190 /* FetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634B28B158A6009A4190 /* FetchManager.swift */; };
 		91BD634E28B15ABD009A4190 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD634D28B15ABD009A4190 /* StorageService.swift */; };
 		91BD635128B1683B009A4190 /* UDSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD635028B1683B009A4190 /* UDSettings.swift */; };
 		91BD635328B16926009A4190 /* UserDefault+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD635228B16926009A4190 /* UserDefault+Ext.swift */; };
@@ -99,8 +99,8 @@
 		91BD634128B116E9009A4190 /* ViewModelMCU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelMCU.swift; sourceTree = "<group>"; };
 		91BD634428B11963009A4190 /* CharacterWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterWS.swift; sourceTree = "<group>"; };
 		91BD634628B1233F009A4190 /* ComicWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicWS.swift; sourceTree = "<group>"; };
-		91BD634928B15425009A4190 /* MCUCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUCacheManager.swift; sourceTree = "<group>"; };
-		91BD634B28B158A6009A4190 /* MCUFetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUFetchManager.swift; sourceTree = "<group>"; };
+		91BD634928B15425009A4190 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		91BD634B28B158A6009A4190 /* FetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchManager.swift; sourceTree = "<group>"; };
 		91BD634D28B15ABD009A4190 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		91BD635028B1683B009A4190 /* UDSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDSettings.swift; sourceTree = "<group>"; };
 		91BD635228B16926009A4190 /* UserDefault+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Ext.swift"; sourceTree = "<group>"; };
@@ -339,8 +339,8 @@
 		91BD634828B153D6009A4190 /* StorageLayer */ = {
 			isa = PBXGroup;
 			children = (
-				91BD634928B15425009A4190 /* MCUCacheManager.swift */,
-				91BD634B28B158A6009A4190 /* MCUFetchManager.swift */,
+				91BD634928B15425009A4190 /* CacheManager.swift */,
+				91BD634B28B158A6009A4190 /* FetchManager.swift */,
 				91BD634D28B15ABD009A4190 /* StorageService.swift */,
 			);
 			path = StorageLayer;
@@ -498,8 +498,8 @@
 				91B0649228B22DCD00ED4E3B /* Storyboard+Ext.swift in Sources */,
 				91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */,
 				91B0646D28B20B3A00ED4E3B /* CharacterListVC.swift in Sources */,
-				91BD634C28B158A6009A4190 /* MCUFetchManager.swift in Sources */,
-				91BD634A28B15425009A4190 /* MCUCacheManager.swift in Sources */,
+				91BD634C28B158A6009A4190 /* FetchManager.swift in Sources */,
+				91BD634A28B15425009A4190 /* CacheManager.swift in Sources */,
 				91B0647F28B20DF800ED4E3B /* EmptyCell.swift in Sources */,
 				91BD634228B116E9009A4190 /* ViewModelMCU.swift in Sources */,
 				91BD62FE28B0B20A009A4190 /* ViewController.swift in Sources */,

@@ -61,7 +61,7 @@ class ViewModelMCU {
 
                     myGroup.notify(queue: .main) {
                         //MARK: - check with bookmarked items
-                        MCUFetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
+                        FetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
                             self.arrCharacters.forEach { item in
                                 if arrCharacter.contains(item) {
                                     item.isBookmarked = true
@@ -77,17 +77,17 @@ class ViewModelMCU {
                     }
                 } else {
                     // MARK: - GET CACHED RESPONSE
-                    MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
+                    FetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
                         completion(arrCharacter)
                     }
                 }
             case .failure(let err):
                 print(err.localizedDescription)
                 // MARK: - GET CACHED RESPONSE
-                MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
+                FetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
                     self.arrCharacters = arrCharacter
                     //MARK: - check with bookmarked items
-                    MCUFetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter1 in
+                    FetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter1 in
                         self.arrCharacters.forEach { item in
                             if arrCharacter1.contains(item) {
                                 item.isBookmarked = true
@@ -126,7 +126,7 @@ class ViewModelMCU {
 extension ViewModelMCU {
     /// remove item from bookmark
     func removeBookMark(forCharacter character: CharacterResult) {
-        MCUFetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
+        FetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
             var allBookmarks = arrCharacter
             print(allBookmarks.count)
             allBookmarks.removeAll { item in

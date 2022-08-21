@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         ViewModelMCU().getCharacters { arrCharacters in
             print(arrCharacters.count)
-            MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
+            FetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
                 print(arrCharacter.count)
             }
         }

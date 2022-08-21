@@ -1,5 +1,5 @@
 //
-//  MCUFetchManager.swift
+//  FetchManager.swift
 //  MCU
 //
 //  Created by Naman Vaishnav on 20/08/22.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-class MCUFetchManager {
-    static let shared: MCUFetchManager = MCUFetchManager()
+class FetchManager {
+    static let shared: FetchManager = FetchManager()
     private init() { }
     
     /// fetch data from storage service
@@ -30,7 +30,7 @@ class MCUFetchManager {
 }
 
 //MARK: - FETCH DATA
-extension MCUFetchManager {
+extension FetchManager {
     /// fetch list of characters
     /// - Parameter completion: handler returns list of characters
     private func fetchCharacters(completion: @escaping (_ arrCharacters: [CharacterResult])-> Void) {
