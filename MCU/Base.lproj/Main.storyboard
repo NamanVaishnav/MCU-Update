@@ -28,8 +28,8 @@
         <scene sceneID="c2M-hO-Oh0">
             <objects>
                 <navigationController id="bkj-jN-w6M" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="N9e-3o-dt7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N9e-3o-dt7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

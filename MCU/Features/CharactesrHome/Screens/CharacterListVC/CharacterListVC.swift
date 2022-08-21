@@ -38,7 +38,7 @@ class CharacterListVC: UICollectionViewController {
     /// refresh control setup
     private func setupRefreshControl(){
         self.extendedLayoutIncludesOpaqueBars = true
-        refreshControl.tintColor = .white
+        refreshControl.tintColor = #colorLiteral(red: 0.8862745098, green: 0.2117647059, blue: 0.2117647059, alpha: 1)
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         collectionView.addSubview(refreshControl)
         collectionView.alwaysBounceVertical = true
@@ -67,7 +67,7 @@ class CharacterListVC: UICollectionViewController {
         searchController.searchBar.tintColor = UIColor.red // #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         searchController.searchBar.delegate = self
         navigationItem.hidesSearchBarWhenScrolling = true
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationController?.navigationBar.sizeToFit()
