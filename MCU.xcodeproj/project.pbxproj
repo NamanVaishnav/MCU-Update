@@ -129,6 +129,8 @@
 		91BD62F828B0B20A009A4190 /* MCU */ = {
 			isa = PBXGroup;
 			children = (
+				91BD632F28B0C050009A4190 /* NetworkLayer */,
+				91BD634828B153D6009A4190 /* StorageLayer */,
 				91BD632C28B0BF09009A4190 /* Features */,
 				91BD632B28B0BE95009A4190 /* Storyboards */,
 				91BD632E28B0C008009A4190 /* Utility */,
@@ -185,7 +187,6 @@
 		91BD632D28B0BF41009A4190 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				91BD634828B153D6009A4190 /* MCUDataCache */,
 				91BD634328B11935009A4190 /* MCUWS */,
 				91BD634028B1151C009A4190 /* ViewModels */,
 				91BD62FD28B0B20A009A4190 /* ViewController.swift */,
@@ -199,20 +200,19 @@
 			children = (
 				91BD634F28B16823009A4190 /* SharedPreference */,
 				91BD633828B0E167009A4190 /* Helpers */,
-				91BD632F28B0C050009A4190 /* Network */,
 				91BD633628B0D6FD009A4190 /* MCUConstants.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
 		};
-		91BD632F28B0C050009A4190 /* Network */ = {
+		91BD632F28B0C050009A4190 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
 				91BD633028B0CED1009A4190 /* NetworkClass.swift */,
 				91BD633228B0D5A4009A4190 /* TargetType.swift */,
 				91BD633428B0D5D4009A4190 /* HTTPMethod.swift */,
 			);
-			name = Network;
+			name = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		91BD633828B0E167009A4190 /* Helpers */ = {
@@ -250,14 +250,14 @@
 			path = MCUWS;
 			sourceTree = "<group>";
 		};
-		91BD634828B153D6009A4190 /* MCUDataCache */ = {
+		91BD634828B153D6009A4190 /* StorageLayer */ = {
 			isa = PBXGroup;
 			children = (
 				91BD634928B15425009A4190 /* MCUCacheManager.swift */,
 				91BD634B28B158A6009A4190 /* MCUFetchManager.swift */,
 				91BD634D28B15ABD009A4190 /* StorageService.swift */,
 			);
-			path = MCUDataCache;
+			path = StorageLayer;
 			sourceTree = "<group>";
 		};
 		91BD634F28B16823009A4190 /* SharedPreference */ = {

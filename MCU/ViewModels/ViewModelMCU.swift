@@ -62,14 +62,22 @@ class ViewModelMCU {
                     myGroup.notify(queue: .main) {
                         completion(self.arrCharacters)
                         // MARK: - CACHE RESPONSE
+                        let cacheManager = CacheManager(cacheType: .character, characters: self.arrCharacters)
+                        cacheManager.cacheData()
                     }
                     
                 } else {
                     // MARK: - GET CACHED RESPONSE
+                    MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
+                        completion(self.arrCharacters)
+                    }
                 }
             case .failure(let err):
-                completion([])
                 print(err.localizedDescription)
+                // MARK: - GET CACHED RESPONSE
+                MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
+                    completion(self.arrCharacters)
+                }
             }
         }
     }
