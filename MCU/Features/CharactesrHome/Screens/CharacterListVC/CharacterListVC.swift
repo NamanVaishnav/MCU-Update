@@ -184,8 +184,7 @@ class CharacterListVC: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch cellType {
         case .skeletonCell,
-             .emptyCell,
-             .normalCell,.searchingCell:
+             .emptyCell:
             break
         case .searchHistoryCell:
 
@@ -195,6 +194,11 @@ class CharacterListVC: UICollectionViewController {
             let obj = arrSearchHistory[indexPath.row]
             searchController.searchBar.text = obj
             callAPI(withSearch: searchController.searchBar.text ?? "")
+        case  .normalCell,.searchingCell:
+            
+            let objVC = Storyboard.Main.instantiate(viewController: CharacterDetailVC.self)
+            objVC.character = arrCharacters[indexPath.row]
+            self.navigationController?.show(objVC, sender: nil)
         }
     }
 

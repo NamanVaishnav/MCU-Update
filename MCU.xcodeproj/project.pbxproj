@@ -18,6 +18,8 @@
 		91B0648928B20FA800ED4E3B /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0648728B20FA800ED4E3B /* CharacterCell.swift */; };
 		91B0648A28B20FA800ED4E3B /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B0648828B20FA800ED4E3B /* CharacterCell.xib */; };
 		91B0648D28B210C600ED4E3B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 91B0648C28B210C600ED4E3B /* SDWebImage */; };
+		91B0649028B22B9600ED4E3B /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0648F28B22B9600ED4E3B /* CharacterDetailVC.swift */; };
+		91B0649228B22DCD00ED4E3B /* Storyboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0649128B22DCD00ED4E3B /* Storyboard+Ext.swift */; };
 		91BD62FA28B0B20A009A4190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD62F928B0B20A009A4190 /* AppDelegate.swift */; };
 		91BD62FC28B0B20A009A4190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD62FB28B0B20A009A4190 /* SceneDelegate.swift */; };
 		91BD62FE28B0B20A009A4190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD62FD28B0B20A009A4190 /* ViewController.swift */; };
@@ -72,6 +74,8 @@
 		91B0648428B20EBA00ED4E3B /* CompositionalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
 		91B0648728B20FA800ED4E3B /* CharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		91B0648828B20FA800ED4E3B /* CharacterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		91B0648F28B22B9600ED4E3B /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVC.swift; sourceTree = "<group>"; };
+		91B0649128B22DCD00ED4E3B /* Storyboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Ext.swift"; sourceTree = "<group>"; };
 		91BD62F628B0B20A009A4190 /* MCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BD62F928B0B20A009A4190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91BD62FB28B0B20A009A4190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		91B0646928B20ADE00ED4E3B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				91B0648E28B22B7200ED4E3B /* CharacterDetailVC */,
 				91B0648628B20F5A00ED4E3B /* CharacterListVC */,
 			);
 			path = Screens;
@@ -179,6 +184,7 @@
 			children = (
 				91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */,
 				91BD635228B16926009A4190 /* UserDefault+Ext.swift */,
+				91B0649128B22DCD00ED4E3B /* Storyboard+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -223,6 +229,14 @@
 				91B0646C28B20B3A00ED4E3B /* CharacterListVC.swift */,
 			);
 			path = CharacterListVC;
+			sourceTree = "<group>";
+		};
+		91B0648E28B22B7200ED4E3B /* CharacterDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				91B0648F28B22B9600ED4E3B /* CharacterDetailVC.swift */,
+			);
+			path = CharacterDetailVC;
 			sourceTree = "<group>";
 		};
 		91BD62ED28B0B20A009A4190 = {
@@ -479,7 +493,9 @@
 				91B0648928B20FA800ED4E3B /* CharacterCell.swift in Sources */,
 				91BD633A28B0E17B009A4190 /* Dictionary+Ext.swift in Sources */,
 				91BD635128B1683B009A4190 /* UDSettings.swift in Sources */,
+				91B0649028B22B9600ED4E3B /* CharacterDetailVC.swift in Sources */,
 				91BD634728B1233F009A4190 /* ComicWS.swift in Sources */,
+				91B0649228B22DCD00ED4E3B /* Storyboard+Ext.swift in Sources */,
 				91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */,
 				91B0646D28B20B3A00ED4E3B /* CharacterListVC.swift in Sources */,
 				91BD634C28B158A6009A4190 /* MCUFetchManager.swift in Sources */,
