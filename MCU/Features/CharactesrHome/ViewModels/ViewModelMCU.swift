@@ -69,14 +69,14 @@ class ViewModelMCU {
                 } else {
                     // MARK: - GET CACHED RESPONSE
                     MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
-                        completion(self.arrCharacters)
+                        completion(arrCharacter)
                     }
                 }
             case .failure(let err):
                 print(err.localizedDescription)
                 // MARK: - GET CACHED RESPONSE
                 MCUFetchManager.shared.fetchData(fetchType: .character) { arrCharacter in
-                    completion(self.arrCharacters)
+                    completion(arrCharacter)
                 }
             }
         }
