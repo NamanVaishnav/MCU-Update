@@ -24,3 +24,12 @@ enum MCUConstant {
         static let privateKey = "6828acd63a2c4fbe740f1cee084eb4760f4ac651"
     }
 }
+
+/// type of cell which will be rendered on collectionview
+enum MCUCellType {
+    case skeletonCell
+    case normalCell
+    case emptyCell
+    case searchingCell
+    case searchHistoryCell
+}

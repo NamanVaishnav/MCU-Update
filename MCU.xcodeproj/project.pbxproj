@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B0646D28B20B3A00ED4E3B /* CharacterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0646C28B20B3A00ED4E3B /* CharacterListVC.swift */; };
+		91B0647E28B20DF800ED4E3B /* SearchHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B0647828B20DF800ED4E3B /* SearchHistoryCell.xib */; };
+		91B0647F28B20DF800ED4E3B /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0647928B20DF800ED4E3B /* EmptyCell.swift */; };
+		91B0648028B20DF800ED4E3B /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B0647A28B20DF800ED4E3B /* EmptyCell.xib */; };
+		91B0648128B20DF800ED4E3B /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0647B28B20DF800ED4E3B /* SkeletonCell.swift */; };
+		91B0648228B20DF800ED4E3B /* SearchHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0647C28B20DF800ED4E3B /* SearchHistoryCell.swift */; };
+		91B0648328B20DF800ED4E3B /* SkeletonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B0647D28B20DF800ED4E3B /* SkeletonCell.xib */; };
+		91B0648528B20EBA00ED4E3B /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0648428B20EBA00ED4E3B /* CompositionalLayout.swift */; };
+		91B0648928B20FA800ED4E3B /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0648728B20FA800ED4E3B /* CharacterCell.swift */; };
+		91B0648A28B20FA800ED4E3B /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B0648828B20FA800ED4E3B /* CharacterCell.xib */; };
+		91B0648D28B210C600ED4E3B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 91B0648C28B210C600ED4E3B /* SDWebImage */; };
 		91BD62FA28B0B20A009A4190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD62F928B0B20A009A4190 /* AppDelegate.swift */; };
 		91BD62FC28B0B20A009A4190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD62FB28B0B20A009A4190 /* SceneDelegate.swift */; };
 		91BD62FE28B0B20A009A4190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD62FD28B0B20A009A4190 /* ViewController.swift */; };
@@ -51,6 +62,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91B0646C28B20B3A00ED4E3B /* CharacterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListVC.swift; sourceTree = "<group>"; };
+		91B0647828B20DF800ED4E3B /* SearchHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHistoryCell.xib; sourceTree = "<group>"; };
+		91B0647928B20DF800ED4E3B /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		91B0647A28B20DF800ED4E3B /* EmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		91B0647B28B20DF800ED4E3B /* SkeletonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		91B0647C28B20DF800ED4E3B /* SearchHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryCell.swift; sourceTree = "<group>"; };
+		91B0647D28B20DF800ED4E3B /* SkeletonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkeletonCell.xib; sourceTree = "<group>"; };
+		91B0648428B20EBA00ED4E3B /* CompositionalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
+		91B0648728B20FA800ED4E3B /* CharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		91B0648828B20FA800ED4E3B /* CharacterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		91BD62F628B0B20A009A4190 /* MCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BD62F928B0B20A009A4190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91BD62FB28B0B20A009A4190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B0648D28B210C600ED4E3B /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +128,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91B0646928B20ADE00ED4E3B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				91B0648628B20F5A00ED4E3B /* CharacterListVC */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		91B0646F28B20CC800ED4E3B /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				91BD633028B0CED1009A4190 /* NetworkClass.swift */,
+				91BD633228B0D5A4009A4190 /* TargetType.swift */,
+				91BD633428B0D5D4009A4190 /* HTTPMethod.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		91B0647028B20CEA00ED4E3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91B0647728B20DF800ED4E3B /* ReusableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91B0647128B20D0200ED4E3B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				91B0647228B20D1900ED4E3B /* CharactesrHome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		91B0647228B20D1900ED4E3B /* CharactesrHome */ = {
+			isa = PBXGroup;
+			children = (
+				91B0646928B20ADE00ED4E3B /* Screens */,
+				91BD634028B1151C009A4190 /* ViewModels */,
+				91BD634328B11935009A4190 /* ServiceLayer */,
+				91BD62FD28B0B20A009A4190 /* ViewController.swift */,
+				91BD633D28B1146B009A4190 /* Models */,
+			);
+			path = CharactesrHome;
+			sourceTree = "<group>";
+		};
+		91B0647428B20D4E00ED4E3B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */,
+				91BD635228B16926009A4190 /* UserDefault+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		91B0647528B20D6D00ED4E3B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				91B0648428B20EBA00ED4E3B /* CompositionalLayout.swift */,
+				91BD633628B0D6FD009A4190 /* MCUConstants.swift */,
+				91B0647628B20D7D00ED4E3B /* SharedPreference */,
+				91B0647428B20D4E00ED4E3B /* Helpers */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		91B0647628B20D7D00ED4E3B /* SharedPreference */ = {
+			isa = PBXGroup;
+			children = (
+				91BD635028B1683B009A4190 /* UDSettings.swift */,
+			);
+			path = SharedPreference;
+			sourceTree = "<group>";
+		};
+		91B0647728B20DF800ED4E3B /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				91B0647828B20DF800ED4E3B /* SearchHistoryCell.xib */,
+				91B0647C28B20DF800ED4E3B /* SearchHistoryCell.swift */,
+				91B0647928B20DF800ED4E3B /* EmptyCell.swift */,
+				91B0647A28B20DF800ED4E3B /* EmptyCell.xib */,
+				91B0647B28B20DF800ED4E3B /* SkeletonCell.swift */,
+				91B0647D28B20DF800ED4E3B /* SkeletonCell.xib */,
+			);
+			path = ReusableCells;
+			sourceTree = "<group>";
+		};
+		91B0648628B20F5A00ED4E3B /* CharacterListVC */ = {
+			isa = PBXGroup;
+			children = (
+				91B0648728B20FA800ED4E3B /* CharacterCell.swift */,
+				91B0648828B20FA800ED4E3B /* CharacterCell.xib */,
+				91B0646C28B20B3A00ED4E3B /* CharacterListVC.swift */,
+			);
+			path = CharacterListVC;
+			sourceTree = "<group>";
+		};
 		91BD62ED28B0B20A009A4190 = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +248,12 @@
 		91BD62F828B0B20A009A4190 /* MCU */ = {
 			isa = PBXGroup;
 			children = (
-				91BD632F28B0C050009A4190 /* NetworkLayer */,
+				91B0647128B20D0200ED4E3B /* Features */,
+				91B0647028B20CEA00ED4E3B /* Views */,
+				91B0646F28B20CC800ED4E3B /* NetworkLayer */,
 				91BD634828B153D6009A4190 /* StorageLayer */,
-				91BD632C28B0BF09009A4190 /* Features */,
 				91BD632B28B0BE95009A4190 /* Storyboards */,
-				91BD632E28B0C008009A4190 /* Utility */,
+				91B0647528B20D6D00ED4E3B /* Utility */,
 				91BD632928B0BE32009A4190 /* Misc */,
 			);
 			path = MCU;
@@ -176,54 +296,6 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		91BD632C28B0BF09009A4190 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				91BD632D28B0BF41009A4190 /* Characters */,
-			);
-			name = Features;
-			sourceTree = "<group>";
-		};
-		91BD632D28B0BF41009A4190 /* Characters */ = {
-			isa = PBXGroup;
-			children = (
-				91BD634328B11935009A4190 /* MCUWS */,
-				91BD634028B1151C009A4190 /* ViewModels */,
-				91BD62FD28B0B20A009A4190 /* ViewController.swift */,
-				91BD633D28B1146B009A4190 /* Models */,
-			);
-			name = Characters;
-			sourceTree = "<group>";
-		};
-		91BD632E28B0C008009A4190 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				91BD634F28B16823009A4190 /* SharedPreference */,
-				91BD633828B0E167009A4190 /* Helpers */,
-				91BD633628B0D6FD009A4190 /* MCUConstants.swift */,
-			);
-			name = Utility;
-			sourceTree = "<group>";
-		};
-		91BD632F28B0C050009A4190 /* NetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				91BD633028B0CED1009A4190 /* NetworkClass.swift */,
-				91BD633228B0D5A4009A4190 /* TargetType.swift */,
-				91BD633428B0D5D4009A4190 /* HTTPMethod.swift */,
-			);
-			name = NetworkLayer;
-			sourceTree = "<group>";
-		};
-		91BD633828B0E167009A4190 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				91BD633928B0E17B009A4190 /* Dictionary+Ext.swift */,
-				91BD635228B16926009A4190 /* UserDefault+Ext.swift */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
 		91BD633D28B1146B009A4190 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,13 +313,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		91BD634328B11935009A4190 /* MCUWS */ = {
+		91BD634328B11935009A4190 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
 				91BD634428B11963009A4190 /* CharacterWS.swift */,
 				91BD634628B1233F009A4190 /* ComicWS.swift */,
 			);
-			path = MCUWS;
+			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
 		91BD634828B153D6009A4190 /* StorageLayer */ = {
@@ -258,14 +330,6 @@
 				91BD634D28B15ABD009A4190 /* StorageService.swift */,
 			);
 			path = StorageLayer;
-			sourceTree = "<group>";
-		};
-		91BD634F28B16823009A4190 /* SharedPreference */ = {
-			isa = PBXGroup;
-			children = (
-				91BD635028B1683B009A4190 /* UDSettings.swift */,
-			);
-			name = SharedPreference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +348,9 @@
 			dependencies = (
 			);
 			name = MCU;
+			packageProductDependencies = (
+				91B0648C28B210C600ED4E3B /* SDWebImage */,
+			);
 			productName = MCU;
 			productReference = 91BD62F628B0B20A009A4190 /* MCU.app */;
 			productType = "com.apple.product-type.application";
@@ -356,6 +423,9 @@
 				Base,
 			);
 			mainGroup = 91BD62ED28B0B20A009A4190;
+			packageReferences = (
+				91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 91BD62F728B0B20A009A4190 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,8 +442,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B0648A28B20FA800ED4E3B /* CharacterCell.xib in Resources */,
 				91BD630628B0B20B009A4190 /* LaunchScreen.storyboard in Resources */,
+				91B0648028B20DF800ED4E3B /* EmptyCell.xib in Resources */,
 				91BD630328B0B20B009A4190 /* Assets.xcassets in Resources */,
+				91B0647E28B20DF800ED4E3B /* SearchHistoryCell.xib in Resources */,
+				91B0648328B20DF800ED4E3B /* SkeletonCell.xib in Resources */,
 				91BD630128B0B20A009A4190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,13 +474,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				91BD633C28B11449009A4190 /* ModelCharacter.swift in Sources */,
+				91B0648128B20DF800ED4E3B /* SkeletonCell.swift in Sources */,
 				91BD633328B0D5A4009A4190 /* TargetType.swift in Sources */,
+				91B0648928B20FA800ED4E3B /* CharacterCell.swift in Sources */,
 				91BD633A28B0E17B009A4190 /* Dictionary+Ext.swift in Sources */,
 				91BD635128B1683B009A4190 /* UDSettings.swift in Sources */,
 				91BD634728B1233F009A4190 /* ComicWS.swift in Sources */,
 				91BD633728B0D6FD009A4190 /* MCUConstants.swift in Sources */,
+				91B0646D28B20B3A00ED4E3B /* CharacterListVC.swift in Sources */,
 				91BD634C28B158A6009A4190 /* MCUFetchManager.swift in Sources */,
 				91BD634A28B15425009A4190 /* MCUCacheManager.swift in Sources */,
+				91B0647F28B20DF800ED4E3B /* EmptyCell.swift in Sources */,
 				91BD634228B116E9009A4190 /* ViewModelMCU.swift in Sources */,
 				91BD62FE28B0B20A009A4190 /* ViewController.swift in Sources */,
 				91BD633F28B11499009A4190 /* ModelComic.swift in Sources */,
@@ -415,7 +493,9 @@
 				91BD633528B0D5D4009A4190 /* HTTPMethod.swift in Sources */,
 				91BD633128B0CED1009A4190 /* NetworkClass.swift in Sources */,
 				91BD62FA28B0B20A009A4190 /* AppDelegate.swift in Sources */,
+				91B0648528B20EBA00ED4E3B /* CompositionalLayout.swift in Sources */,
 				91BD62FC28B0B20A009A4190 /* SceneDelegate.swift in Sources */,
+				91B0648228B20DF800ED4E3B /* SearchHistoryCell.swift in Sources */,
 				91BD634E28B15ABD009A4190 /* StorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -758,6 +838,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91B0648C28B210C600ED4E3B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91BD62EE28B0B20A009A4190 /* Project object */;
 }
