@@ -15,6 +15,10 @@ class CharacterDetailVC: UIViewController {
     @IBOutlet weak var viewCollection: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     var character: CharacterResult?
+    @IBOutlet weak var btnBookmark: UIButton!
+    var viewModelCharacter: ViewModelMCU?
+    @IBOutlet weak var constImgHeight: NSLayoutConstraint!
+     var constImgHeight2: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,10 @@ class CharacterDetailVC: UIViewController {
     }
     
     private func setupView() {
+        // Image height Constant
+        constImgHeight = constImgHeight2
+        
+        
         // character image
         if let path = character?.thumbnail?.path, let ext = character?.thumbnail?.thumbnailExtension {
             let imgURL = path + "." + ext
@@ -50,8 +58,28 @@ class CharacterDetailVC: UIViewController {
         } else {
             viewCollection.isHidden = true
         }
+        
+        //  bookmark
+        if let isBookMark = character?.isBookmarked {
+            btnBookmark.isSelected = isBookMark
+        }
     }
     
+    @IBAction func actionBookmark(_ sender: UIButton) {
+        
+        
+        if let character = character,  (viewModelCharacter != nil){
+            if btnBookmark.isSelected {
+                // remove item from bookmark
+                self.viewModelCharacter!.removeBookMark(forCharacter: character)
+            } else {
+                // cache bookmark
+                self.viewModelCharacter!.addBookMark(forCharacter: character)
+            }
+            btnBookmark.isSelected = !btnBookmark.isSelected
+            character.isBookmarked = !character.isBookmarked
+        }
+    }
     /// register cell in collectionView
     private func registerCell(){
         // Register cell classes

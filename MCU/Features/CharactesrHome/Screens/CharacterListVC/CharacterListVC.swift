@@ -35,6 +35,9 @@ class CharacterListVC: UICollectionViewController {
         callAPI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.collectionView.reloadData()
+    }
     /// refresh control setup
     private func setupRefreshControl(){
         self.extendedLayoutIncludesOpaqueBars = true
@@ -187,13 +190,13 @@ class CharacterListVC: UICollectionViewController {
             aCell.btnBookmark.isSelected = obj.isBookmarked
             
             // Bookmark completion
-            aCell.bookmarkCompletion = { () -> Void in
+            aCell.bookmarkCompletion = { [weak self] () -> Void in
                 if aCell.btnBookmark.isSelected {
                     // remove item from bookmark
-                    self.viewModelCharacter.removeBookMark(forCharacter: obj)
+                    self?.viewModelCharacter.removeBookMark(forCharacter: obj)
                 } else {
                     // cache bookmark
-                    self.viewModelCharacter.addBookMark(forCharacter: obj)
+                    self?.viewModelCharacter.addBookMark(forCharacter: obj)
                 }
                 aCell.btnBookmark.isSelected = !aCell.btnBookmark.isSelected
                 obj.isBookmarked = !obj.isBookmarked
@@ -234,6 +237,7 @@ class CharacterListVC: UICollectionViewController {
         case  .normalCell,.searchingCell:
             
             let objVC = Storyboard.Main.instantiate(viewController: CharacterDetailVC.self)
+            objVC.viewModelCharacter = viewModelCharacter
             objVC.character = arrCharacters[indexPath.row]
             self.navigationController?.show(objVC, sender: nil)
         }
