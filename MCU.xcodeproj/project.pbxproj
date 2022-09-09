@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A17DDED92AB9BE681E1B052 /* Pods_MCU_MCUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1BAC0EE965A43895860EBB /* Pods_MCU_MCUUITests.framework */; };
-		5BA45FFB3134EC5FCBB13A94 /* Pods_MCUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E221BF0BB126AA1FB9EA29CA /* Pods_MCUTests.framework */; };
-		62156644D2040B50EB665240 /* Pods_MCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F47A71E92BA08900939E8D /* Pods_MCU.framework */; };
 		9185E89928B335CB0073534F /* CharacterWSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185E89828B335CB0073534F /* CharacterWSTests.swift */; };
 		91B0646D28B20B3A00ED4E3B /* CharacterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0646C28B20B3A00ED4E3B /* CharacterListVC.swift */; };
 		91B0647E28B20DF800ED4E3B /* SearchHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B0647828B20DF800ED4E3B /* SearchHistoryCell.xib */; };
@@ -67,9 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CB1FF688F0135CE6E89B86E /* Pods-MCU-MCUUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCU-MCUUITests.release.xcconfig"; path = "Target Support Files/Pods-MCU-MCUUITests/Pods-MCU-MCUUITests.release.xcconfig"; sourceTree = "<group>"; };
-		422AFA7C0A434CF20CB9F0A1 /* Pods-MCU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCU.debug.xcconfig"; path = "Target Support Files/Pods-MCU/Pods-MCU.debug.xcconfig"; sourceTree = "<group>"; };
-		8035BD00F01E0D28D4712ED4 /* Pods-MCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCU.release.xcconfig"; path = "Target Support Files/Pods-MCU/Pods-MCU.release.xcconfig"; sourceTree = "<group>"; };
 		9185E89828B335CB0073534F /* CharacterWSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterWSTests.swift; sourceTree = "<group>"; };
 		91B0646C28B20B3A00ED4E3B /* CharacterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListVC.swift; sourceTree = "<group>"; };
 		91B0647828B20DF800ED4E3B /* SearchHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHistoryCell.xib; sourceTree = "<group>"; };
@@ -110,12 +104,6 @@
 		91BD634D28B15ABD009A4190 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		91BD635028B1683B009A4190 /* UDSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDSettings.swift; sourceTree = "<group>"; };
 		91BD635228B16926009A4190 /* UserDefault+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Ext.swift"; sourceTree = "<group>"; };
-		A04A954A56D914160989F921 /* Pods-MCUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCUTests.debug.xcconfig"; path = "Target Support Files/Pods-MCUTests/Pods-MCUTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D3F47A71E92BA08900939E8D /* Pods_MCU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E221BF0BB126AA1FB9EA29CA /* Pods_MCUTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCUTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F127ECC379DF145A95C008F5 /* Pods-MCUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCUTests.release.xcconfig"; path = "Target Support Files/Pods-MCUTests/Pods-MCUTests.release.xcconfig"; sourceTree = "<group>"; };
-		FA2B2869798E479CB2AFB0DC /* Pods-MCU-MCUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCU-MCUUITests.debug.xcconfig"; path = "Target Support Files/Pods-MCU-MCUUITests/Pods-MCU-MCUUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		FD1BAC0EE965A43895860EBB /* Pods_MCU_MCUUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCU_MCUUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +112,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B0648D28B210C600ED4E3B /* SDWebImage in Frameworks */,
-				62156644D2040B50EB665240 /* Pods_MCU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BA45FFB3134EC5FCBB13A94 /* Pods_MCUTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,27 +126,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A17DDED92AB9BE681E1B052 /* Pods_MCU_MCUUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A88113C7FD94864DF8DFC6A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				422AFA7C0A434CF20CB9F0A1 /* Pods-MCU.debug.xcconfig */,
-				8035BD00F01E0D28D4712ED4 /* Pods-MCU.release.xcconfig */,
-				FA2B2869798E479CB2AFB0DC /* Pods-MCU-MCUUITests.debug.xcconfig */,
-				1CB1FF688F0135CE6E89B86E /* Pods-MCU-MCUUITests.release.xcconfig */,
-				A04A954A56D914160989F921 /* Pods-MCUTests.debug.xcconfig */,
-				F127ECC379DF145A95C008F5 /* Pods-MCUTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9185E89A28B339490073534F /* BlackBoxTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,8 +260,6 @@
 				91BD630F28B0B20B009A4190 /* MCUTests */,
 				91BD631928B0B20B009A4190 /* MCUUITests */,
 				91BD62F728B0B20A009A4190 /* Products */,
-				8A88113C7FD94864DF8DFC6A /* Pods */,
-				D49275CB16F810E9A9F7D5EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -393,16 +362,6 @@
 			path = StorageLayer;
 			sourceTree = "<group>";
 		};
-		D49275CB16F810E9A9F7D5EC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D3F47A71E92BA08900939E8D /* Pods_MCU.framework */,
-				FD1BAC0EE965A43895860EBB /* Pods_MCU_MCUUITests.framework */,
-				E221BF0BB126AA1FB9EA29CA /* Pods_MCUTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,7 +369,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91BD632028B0B20B009A4190 /* Build configuration list for PBXNativeTarget "MCU" */;
 			buildPhases = (
-				D9143E17623C30E39C94FA18 /* [CP] Check Pods Manifest.lock */,
 				91BD62F228B0B20A009A4190 /* Sources */,
 				91BD62F328B0B20A009A4190 /* Frameworks */,
 				91BD62F428B0B20A009A4190 /* Resources */,
@@ -431,7 +389,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91BD632328B0B20B009A4190 /* Build configuration list for PBXNativeTarget "MCUTests" */;
 			buildPhases = (
-				3FECF33B5CAF86656F7AC0BC /* [CP] Check Pods Manifest.lock */,
 				91BD630828B0B20B009A4190 /* Sources */,
 				91BD630928B0B20B009A4190 /* Frameworks */,
 				91BD630A28B0B20B009A4190 /* Resources */,
@@ -450,7 +407,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91BD632628B0B20B009A4190 /* Build configuration list for PBXNativeTarget "MCUUITests" */;
 			buildPhases = (
-				510B858A7A02E8379E9AEF23 /* [CP] Check Pods Manifest.lock */,
 				91BD631228B0B20B009A4190 /* Sources */,
 				91BD631328B0B20B009A4190 /* Frameworks */,
 				91BD631428B0B20B009A4190 /* Resources */,
@@ -498,7 +454,7 @@
 			);
 			mainGroup = 91BD62ED28B0B20A009A4190;
 			packageReferences = (
-				91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+				91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 91BD62F728B0B20A009A4190 /* Products */;
 			projectDirPath = "";
@@ -541,75 +497,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3FECF33B5CAF86656F7AC0BC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MCUTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		510B858A7A02E8379E9AEF23 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MCU-MCUUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9143E17623C30E39C94FA18 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MCU-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91BD62F228B0B20A009A4190 /* Sources */ = {
@@ -813,7 +700,6 @@
 		};
 		91BD632128B0B20B009A4190 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 422AFA7C0A434CF20CB9F0A1 /* Pods-MCU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -842,7 +728,6 @@
 		};
 		91BD632228B0B20B009A4190 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8035BD00F01E0D28D4712ED4 /* Pods-MCU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -871,7 +756,6 @@
 		};
 		91BD632428B0B20B009A4190 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A04A954A56D914160989F921 /* Pods-MCUTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -892,7 +776,6 @@
 		};
 		91BD632528B0B20B009A4190 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F127ECC379DF145A95C008F5 /* Pods-MCUTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -913,7 +796,6 @@
 		};
 		91BD632728B0B20B009A4190 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA2B2869798E479CB2AFB0DC /* Pods-MCU-MCUUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -932,7 +814,6 @@
 		};
 		91BD632828B0B20B009A4190 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CB1FF688F0135CE6E89B86E /* Pods-MCU-MCUUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -991,7 +872,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+		91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -1004,7 +885,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		91B0648C28B210C600ED4E3B /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			package = 91B0648B28B210C600ED4E3B /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -80,44 +78,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-vV-yyd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjT-nk-Jml">
-                                                <rect key="frame" x="0.0" y="300" width="414" height="430"/>
+                                                <rect key="frame" x="0.0" y="300" width="414" height="364"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="O7v-hZ-G8W">
-                                                        <rect key="frame" x="12" y="0.0" width="390" height="430"/>
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="364"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yC6-CX-9m5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
-                                                                <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygf-TR-EyE">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="346" height="44"/>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                    </view>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ict-eK-Vid">
-                                                                        <rect key="frame" x="346" y="0.0" width="44" height="44"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="44" id="1NG-fw-Uf5"/>
-                                                                            <constraint firstAttribute="width" constant="44" id="Mqq-jE-m7N"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                                        <color key="tintColor" name="AccentColor"/>
-                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                        <state key="normal">
-                                                                            <imageReference key="image" image="suit.heart" catalog="system" symbolScale="large"/>
-                                                                        </state>
-                                                                        <state key="selected">
-                                                                            <imageReference key="image" image="suit.heart.fill" catalog="system" symbolScale="large"/>
-                                                                        </state>
-                                                                        <connections>
-                                                                            <action selector="actionBookmark:" destination="f0r-il-RsI" eventType="touchUpInside" id="IUe-56-vbq"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6T-qB-Tvo">
-                                                                <rect key="frame" x="0.0" y="66" width="390" height="42"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="42"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="Vyz-Oo-396"/>
                                                                 </constraints>
@@ -126,7 +96,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guw-Cz-3kO">
-                                                                <rect key="frame" x="0.0" y="130" width="390" height="28"/>
+                                                                <rect key="frame" x="0.0" y="64" width="390" height="28"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="Grn-m8-NNb"/>
                                                                 </constraints>
@@ -135,7 +105,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzQ-Pb-4qN">
-                                                                <rect key="frame" x="0.0" y="180" width="390" height="250"/>
+                                                                <rect key="frame" x="0.0" y="114" width="390" height="250"/>
                                                                 <subviews>
                                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-NZ-g7C">
                                                                         <rect key="frame" x="0.0" y="50" width="390" height="200"/>
@@ -224,9 +194,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBookmark" destination="Ict-eK-Vid" id="z0q-Fg-bCg"/>
                         <outlet property="collectionView" destination="sh5-NZ-g7C" id="rPZ-a1-SNI"/>
-                        <outlet property="constImgHeight" destination="bju-Zl-7ju" id="Ann-nS-Blz"/>
                         <outlet property="imgView" destination="Jxy-t5-x2R" id="9hs-ja-N2n"/>
                         <outlet property="lblDescription" destination="Guw-Cz-3kO" id="NBc-ks-vUG"/>
                         <outlet property="lblTitle" destination="g6T-qB-Tvo" id="fwf-mN-ldd"/>
@@ -239,11 +207,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="suit.heart" catalog="system" width="128" height="109"/>
-        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
-        <namedColor name="AccentColor">
-            <color red="0.88627450980392153" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

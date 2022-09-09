@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 class ViewModelMCU {
     /// used to determine whether data is being fetch from server or not
@@ -99,9 +98,6 @@ class ViewModelMCU {
                 }
             }
         }
-        defer {
-            arrCharacters = []
-        }
     }
     
     /// grab comics for supplied character id
@@ -128,11 +124,6 @@ class ViewModelMCU {
 
 //MARK: - BOOKMARK
 extension ViewModelMCU {
-    
-    func bookmarkButton(_ inputButton: UIButton) {
-        
-    }
-    
     /// remove item from bookmark
     func removeBookMark(forCharacter character: CharacterResult) {
         FetchManager.shared.fetchData(fetchType: .bookmark) { arrCharacter in
