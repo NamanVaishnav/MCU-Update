@@ -1,5 +1,5 @@
 # MCU-VELOTIO
-Marvel Universe 🚀 created with ❤️  by Naman Vaishnav © for VELOTIO  🏢
+Marvel Universe 🚀 created with ❤️  by Naman Vaishnav 
 
 # Marvel’s comic characters App
 
