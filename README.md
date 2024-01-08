@@ -1,4 +1,4 @@
-# MCU-VELOTIO
+# MCU
 Marvel Universe 🚀 created with ❤️  by Naman Vaishnav 
 
 # Marvel’s comic characters App
